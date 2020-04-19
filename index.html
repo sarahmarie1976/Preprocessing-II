@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Fun Bus Travel Agency - Solution</title>
 
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
@@ -12,20 +14,54 @@
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+
+  <section class="box1">
+
+    <h1>Fun Bus</h1>
+
+    <nav class="nav">
+  
+      <a href="home">Home</a>
+      <a href="#about">About</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+  
+    </nav> <!-- closing for nav -->
+  </section> <!-- closing for container-->
 </head>
 
 <body>
 
+  <section class="box2">
   
+    <div class="image1">
+  
+      <img class="bus" src="img/fun-bus.jpg"  alt="picture of a toy yellow bus in a sand">
+
+    </div> <!-- closing for image1 -->
+    
+    <div class="head">
+    
+      <h1>Welcome to Fun Bus!</h1>
+
+      <p>Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition. </p>
+   </div>
+    
+  </section>
+
+  <hr class="style5">
      
   <div class="container home">
    
     <section class="content-section">
       <div class="text-content">
+
         <h2>Let's Go!</h2>
+
         <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty simple traveling fun WordPress wanderlust darn simple organized.</p> 
         <p>Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p>
       </div>
+
       <div class="img-content">
         <img src="img/adventure.jpg" alt="Let's go on an adventure!">
       </div>
@@ -41,6 +77,8 @@
       </div>
      
     </section>
+
+
     <section class="content-destination">
       <h2>Pick Your Destination</h2>
       <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
@@ -65,6 +103,64 @@
       </div>
     </section>
   </div><!-- container -->
+
+  
+<!-------------- BEG: FORM ---------------->
+
+<div class="form">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+      <div class="col-25">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="email" placeholder="Your email address..">
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="packages" name="packages">
+          <option value="fun_in_the_sun">Fun in the Sun</option>
+          <option value="mountain_excursion">Mountain Excursion</option>
+          <option value="island_getaway">Island Getaway</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+
+
+<!-------------- END: FORM ---------------->
 
   <footer class="footer">
     <p>Copyright Fun Bus 2018</p>
